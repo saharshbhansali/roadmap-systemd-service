@@ -4,8 +4,8 @@ Description=A dummy systemd service
 # Before=multi-user.target
 
 [Service]
-ExecStart=/bin/sh $HOME/Projects/roadmap-systemd-service/dummy.sh
-ExecReload=/bin/sh $HOME/Projects/roadmap-systemd-service/dummy.sh
+ExecStart=/bin/sh "${HOME}/Projects/roadmap-systemd-service/dummy.sh"
+ExecReload=/bin/sh "${HOME}/Projects/roadmap-systemd-service/dummy.sh"
 Restart=always
 # Type=oneshot
 
