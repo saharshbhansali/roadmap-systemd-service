@@ -7,7 +7,7 @@ After=multi-user.target
 ExecStart=/bin/sh $HOME/Projects/roadmap-systemd-service/dummy.sh
 ExecReload=/bin/sh $HOME/Projects/roadmap-systemd-service/dummy.sh
 Restart=always
-Type=oneshot
+# Type=oneshot
 
 [Install]
 WantedBy=multi-user.target
