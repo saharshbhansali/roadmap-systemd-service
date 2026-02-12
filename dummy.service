@@ -1,0 +1,15 @@
+[Unit]
+Description=A dummy systemd service
+After=multi-user.target
+# Before=multi-user.target
+
+[Service]
+ExecStart=/bin/sh $HOME/Projects/roadmap-systemd-service/dummy.sh
+ExecReload=/bin/sh $HOME/Projects/roadmap-systemd-service/dummy.sh
+Restart=always
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
+# RequiredBy=default.target
+
